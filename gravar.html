@@ -1,0 +1,19 @@
+<form action="{{ url_for('salvar_dados') }}" method="POST">
+    <h1 style="background-color: rgb(167, 167, 167); max-width: fit-content;">GRAVE SEU NOME | IDADE | GÊNERO</h1>
+  
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" style="margin-bottom: 10px !important;"><br>
+  
+    <label for="idade">Idade:</label>
+    <input type="text" id="idade" name="idade" style="margin-bottom: 10px !important;"><br>
+  
+    <label for="genero">Gênero:</label>
+    <select id="genero" name="genero" style="margin-bottom: 10px !important;">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+    </select><br>
+    
+    <input type="submit" value="Enviar">
+  </form>
+  
